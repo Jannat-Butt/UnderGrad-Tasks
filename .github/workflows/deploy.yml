@@ -28,5 +28,5 @@ jobs:
 
       - name: Deploy to Vercel
         run: |
-          vercel --token *** --prod --yes --name knn-predictor
+          vercel --token ${{ secrets.CICDTOKEN1 }} --prod --yes --name knn-predictor
 
