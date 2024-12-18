@@ -1,25 +1,26 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "50mb"
-        }
+  "version": 2,
+  "name": "knn-predictor",  // Make sure this name follows Vercel's naming rules.
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
       }
-    ],
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/app.py",
-        "headers": {
-          "x-vercel-id": "rewrite"
-        }
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/app.py"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/app.py",
+      "headers": {
+        "x-vercel-id": "rewrite"
       }
-    ]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app.py"
+    }
+  ]
 }
