@@ -28,4 +28,4 @@ jobs:
 
       - name: Deploy to Vercel
         run: |
-          vercel --token ${{ secrets.CICDTOKEN1 }} --prod
+          vercel --token ${{ secrets.CICDTOKEN1 }} --prod --yes
