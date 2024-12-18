@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "knn-predictor",  // Make sure this name follows Vercel's naming rules.
+  "name": "knn-predictor",  
   "builds": [
     {
       "src": "app.py",
