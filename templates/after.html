@@ -1,0 +1,21 @@
+<html>
+<body style="background-image: linear-gradient(to right,#FFB6C1, #FFDAB9, #DDA0DD);"> 
+        <h1>Predicted Specie :</h1>    
+    <center>
+        {% if data == 0 %}
+        <h2>Iris-setosa</h2>  
+        {% elif data == 1 %}
+        <h2>Iris-virginica</h2>
+        {% elif data ==2 %}
+        <h2>Iris-versicolor</h2>
+        {% else %}
+        <h2>None class Predicted</h2>
+        
+        {% endif %}
+        
+        <br><hr>
+
+    <a href='/frontend'>Go back to home page</a>
+</center>
+</body>
+</html>

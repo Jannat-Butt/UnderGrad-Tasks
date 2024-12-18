@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frontend</title>
+</head>
+
+<style>
+    /*fixed width for labels*/
+    label {
+        display: inline-block;
+        width: 150px; 
+        text-align:center; 
+    }  
+    /*input fields aligned*/
+    input {
+        width: 250px;
+    }    
+    /*margin to each div to add space*/
+    div {
+        margin-bottom: 15px;
+    }
+</style>
+<body style="background-image: linear-gradient(to right, #FFE4E1, #FFFACD, #E6E6FA);">
+    <h1>Welcome to the KNN Predictor</h1><br>
+    <form method="POST" action="{{ url_for('predict') }}">
+        <div >
+             <label for="feature1">Sepal Length:</label>
+            <input type="text" id="feature1" name="feature1" required><br>
+        </div>
+       
+        <div >
+            <label for="feature2">Sepal Width:</label>
+            <input type="text" id="feature2" name="feature2" required><br>
+        </div>
+        
+        <div >
+            <label for="feature3">Petal Length:</label>
+            <input type="text" id="feature3" name="feature3" required><br>
+        </div>
+        
+        <div >
+            <label for="feature4">Petal Width:</label>
+            <input type="text" id="feature4" name="feature4" required><br><br><hr>
+        </div>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
