@@ -18,7 +18,7 @@ jobs:
 
 
       - name: Build Docker image
-        run: docker build -t jannatbuttmlops/docker-prediction-model:latest .
+        run: docker build -t jannatbutt/docker-prediction-model:latest .
 
       - name: Push Docker image
-        run: docker push jannatbuttmlops/docker-prediction-model:latest
+        run: docker push jannatbutt/docker-prediction-model:latest
