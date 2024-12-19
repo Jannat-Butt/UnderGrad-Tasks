@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - salary-prediction-docker-ghactions
 
 jobs:
   build:
